@@ -23,7 +23,7 @@ requirements:
     - python
     - hyperframe    >=3.1,<6,!=4.0.0
     - hpack         >=2.2,<4
-    - enum34        >=1.0.4,<2  # [py2k]
+    - enum34        >=1.0.4,<2 # [py2k]
 
 test:
   imports:
