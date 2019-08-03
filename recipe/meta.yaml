@@ -16,9 +16,10 @@ build:
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
+    - pip
   run:
     - python
     - hyperframe    >=5.1.0,<6
