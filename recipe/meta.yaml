@@ -1,6 +1,6 @@
 {% set name = "h2" %}
-{% set version = "3.1.0" %}
-{% set sha256 = "fd07e865a3272ac6ef195d8904de92dc7b38dc28297ec39cfa22716b6d62e6eb" %}
+{% set version = "3.1.1" %}
+{% set sha256 = "b8a32bd282594424c0ac55845377eea13fa54fe4a8db012f3a198ed923dc3ab4" %}
 
 package:
   name: {{ name|lower }}
