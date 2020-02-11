@@ -1,6 +1,6 @@
 {% set name = "h2" %}
-{% set version = "3.1.1" %}
-{% set sha256 = "b8a32bd282594424c0ac55845377eea13fa54fe4a8db012f3a198ed923dc3ab4" %}
+{% set version = "3.2.0" %}
+{% set sha256 = "875f41ebd6f2c44781259005b157faed1a5031df3ae5aa7bcb4628a6c0782f14" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
