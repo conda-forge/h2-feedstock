@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -21,10 +21,9 @@ requirements:
     - setuptools
     - pip
   run:
-    - python
-    - hyperframe    >=5.1.0,<6
-    - hpack         >=2.3,<4
-    - enum34        >=1.1.6,<2  # [py2k]
+    - python        >=3.6.1
+    - hyperframe    >=6.0,<7
+    - hpack         >=4.0,<5
 
 test:
   imports:
@@ -41,3 +40,4 @@ about:
 extra:
   recipe-maintainers:
     - primozgodec
+    - wiphoo
