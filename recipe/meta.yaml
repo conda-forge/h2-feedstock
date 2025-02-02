@@ -1,6 +1,6 @@
 {% set name = "h2" %}
-{% set version = "4.1.0" %}
-{% set sha256 = "a83aca08fbe7aacb79fec788c9c0bac936343560ed9ec18b82a13a12c28d2abb" %}
+{% set version = "4.2.0" %}
+{% set sha256 = "c8a52129695e88b1a0578d8d2cc6842bbd79128ac685463b887ee278126ad01f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
