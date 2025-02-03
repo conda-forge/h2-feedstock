@@ -23,8 +23,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - hyperframe    >=6.0,<7
-    - hpack         >=4.0,<5
+    - hyperframe    >=6.1,<7
+    - hpack         >=4.1,<5
 
 test:
   requires:
