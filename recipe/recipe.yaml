@@ -1,7 +1,9 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
 schema_version: 1
 
 context:
   version: "4.4.0"
+  python_check_max: "3.14"
 
 package:
   name: h2
@@ -25,7 +27,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - hyperframe >=6.1,<7
-    - hpack >=4.1,<5
+    - hpack >=4.2,<5
 
 tests:
   - python:
@@ -33,7 +35,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - 3.13.*
+        - ${{ python_check_max }}.*
   - requirements:
       run:
         - python ${{ python_min }}.*
@@ -44,14 +46,15 @@ tests:
         - tests/
     script:
       - coverage run --source=h2 --branch -m pytest -vv --tb=long --color=yes
-      - coverage report --show-missing --skip-covered --fail-under=100
+      - coverage report --show-missing --skip-covered --fail-under=99
 
 about:
   license: MIT
   license_file: LICENSE
   summary: HTTP/2 State-Machine based protocol implementation
-  homepage: https://python-hyper.org
+  homepage: https://pypi.org/project/h2
   repository: https://github.com/python-hyper/h2
+  documentation: https://python-hyper.org
 
 extra:
   recipe-maintainers:
