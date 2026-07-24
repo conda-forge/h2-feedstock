@@ -3,13 +3,15 @@ About h2-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/h2-feedstock/blob/main/LICENSE.txt)
 
-Home: https://python-hyper.org/
+Home: https://pypi.org/project/h2
 
 Package license: MIT
 
 Summary: HTTP/2 State-Machine based protocol implementation
 
 Development: https://github.com/python-hyper/h2
+
+Documentation: https://python-hyper.org/
 
 Current build status
 ====================
